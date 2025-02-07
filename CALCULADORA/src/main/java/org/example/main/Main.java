@@ -97,14 +97,14 @@ public class Main {
                                 double a1 = scanner.nextDouble();
                                 System.out.print("Ingrese el segundo número real: ");
                                 double b1 = scanner.nextDouble();
-                                System.out.println("Resultado: " + resta.restar(a1, b1));
+                                System.out.println("Resultado: " + resta.restaReales(a1, b1));
                                 break;
                             case 2:
                                 System.out.print("Ingrese el primer número entero: ");
                                 int a2 = scanner.nextInt();
                                 System.out.print("Ingrese el segundo número entero: ");
                                 int b2 = scanner.nextInt();
-                                System.out.println("Resultado: " + resta.restar(a2, b2));
+                                System.out.println("Resultado: " + resta.restaEnteros(a2, b2));
                                 break;
                             case 3:
                                 System.out.print("Ingrese el primer número real: ");
@@ -113,13 +113,13 @@ public class Main {
                                 double b3 = scanner.nextDouble();
                                 System.out.print("Ingrese el tercer número real: ");
                                 double c3 = scanner.nextDouble();
-                                System.out.println("Resultado: " + resta.restar(a3, b3, c3));
+                                System.out.println("Resultado: " + resta.restaTresReales(a3, b3, c3));
                                 break;
                             case 4:
                                 System.out.print("Ingrese el número a restar del valor acumulado: ");
                                 double valor = scanner.nextDouble();
-                                resta.restarAcumulado(valor);
-                                System.out.println("Nuevo valor acumulado: " + resta.getValorAcumulado());
+                                resta.restaAcumulada(valor);
+                                System.out.println("Nuevo valor acumulado: " + resta.getAcumulado());
                                 break;
                             case 5:
                                 System.out.println("Saliendo del programa...");
