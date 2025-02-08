@@ -10,9 +10,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Resta resta = new Resta();
-        Producto producto = new Producto();
-        Cociente cociente = new Cociente();
+
 
         int opcion;
         do {
@@ -78,7 +76,7 @@ public class Main {
                 case 2:
                     System.out.println("2. Resta");
                     Resta resta = new Resta();
-                    int opcion;
+                    int opcionResta;
 
                     do {
                         System.out.println("\n--- Menú de Resta ---");
@@ -89,9 +87,9 @@ public class Main {
                         System.out.println("5. Salir");
                         System.out.print("Seleccione una opción: ");
 
-                        opcion = scanner.nextInt();
+                        opcionResta = scanner.nextInt();
 
-                        switch (opcion) {
+                        switch (opcionResta) {
                             case 1:
                                 System.out.print("Ingrese el primer número real: ");
                                 double a1 = scanner.nextDouble();
@@ -127,13 +125,13 @@ public class Main {
                             default:
                                 System.out.println("Opción no válida. Intente de nuevo.");
                         }
-                    } while (opcion != 5);
+                    } while (opcionResta != 5);
                     break;
                 case 3:
                     System.out.println("3. Producto");
                     Producto producto = new Producto();
 
-                    int opcion;
+                    int opcionProducto;
 
                     do {
                         System.out.println("\nMenu de operaciones:");
@@ -143,9 +141,9 @@ public class Main {
                         System.out.println("4. Potencia");
                         System.out.println("5. Salir");
                         System.out.print("Elija una opción: ");
-                        opcion = scanner.nextInt();
+                        opcionProducto = scanner.nextInt();
 
-                        switch (opcion) {
+                        switch (opcionProducto) {
                             case 1:
                                 System.out.print("Ingrese el primer número real: ");
                                 double num1 = scanner.nextDouble();
@@ -187,12 +185,12 @@ public class Main {
                             default:
                                 System.out.println("Opción no válida. Intente nuevamente.");
                         }
-                    } while (opcion != 5);
+                    } while (opcionProducto != 5);
                     break;
                 case 4:
                     System.out.println("4. Cociente");
                     Cociente cociente = new Cociente();
-                    int opcion;
+                    int opcionCociente;
 
                     do {
                         // Menú
@@ -203,16 +201,16 @@ public class Main {
                         System.out.println("4. Raíz de un número");
                         System.out.println("5. Salir");
                         System.out.print("Elija una opción: ");
-                        opcion = scanner.nextInt();
+                        opcionCociente = scanner.nextInt();
 
-                        switch(opcion) {
+                        switch(opcionCociente) {
                             case 1:
                                 // División de dos números reales
                                 System.out.print("Ingrese el primer número real: ");
                                 double real1 = scanner.nextDouble();
                                 System.out.print("Ingrese el segundo número real: ");
                                 double real2 = scanner.nextDouble();
-                                double resultadoReal = cociente.dividirReales(real1, real2);
+                                double resultadoReal = cociente.dividorReales(real1, real2);
                                 System.out.println("Resultado: " + resultadoReal);
                                 break;
 
@@ -222,7 +220,7 @@ public class Main {
                                 int entero1 = scanner.nextInt();
                                 System.out.print("Ingrese el segundo número entero: ");
                                 int entero2 = scanner.nextInt();
-                                int resultadoEntero = cociente.dividirEnteros(entero1, entero2);
+                                int resultadoEntero = cociente.dividorEnteros(entero1, entero2);
                                 System.out.println("Resultado: " + resultadoEntero);
                                 break;
 
@@ -230,7 +228,7 @@ public class Main {
                                 // Inverso de un número real
                                 System.out.print("Ingrese un número real: ");
                                 double real = scanner.nextDouble();
-                                double inverso = cociente.inverso(real);
+                                double inverso = cociente.inversoReal(real);
                                 System.out.println("Inverso: " + inverso);
                                 break;
 
@@ -249,7 +247,7 @@ public class Main {
                             default:
                                 System.out.println("Opción no válida, intente de nuevo.");
                         }
-                    } while(opcion != 5);
+                    } while(opcionCociente != 5);
                     break;
                 case 5:
                     System.out.println("Saliendo de la calculadora...");
