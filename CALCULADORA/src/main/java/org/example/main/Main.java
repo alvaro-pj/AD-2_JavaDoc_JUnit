@@ -1,9 +1,6 @@
 package org.example.main;
 
-import org.example.clases.Cociente;
-import org.example.clases.Producto;
-import org.example.clases.Resta;
-import org.example.clases.Suma;
+import org.example.clases.*;
 
 import java.util.Scanner;
 import java.text.DecimalFormat;
@@ -20,7 +17,8 @@ public class Main {
             System.out.println("2. Resta");
             System.out.println("3. Producto");
             System.out.println("4. Cociente");
-            System.out.println("5. Salir");
+            System.out.println("5. Modulo");
+            System.out.println("6. Salir");
             System.out.print("Seleccione una opción: ");
             opcion = scanner.nextInt();
 
@@ -252,6 +250,50 @@ public class Main {
                     } while(opcionCociente != 5);
                     break;
                 case 5:
+                    System.out.println("5. Modulo");
+                    Modulo modulo = new Modulo();
+                    int opcionModulo;
+
+                    do {
+                        // Menú
+                        System.out.println("\n---- Menú de Operaciones de la Calculadora ----");
+                        System.out.println("1. Calcula el modulo");
+                        System.out.println("2. Calcula el absoluto");
+                        System.out.println("3. Salir");
+                        System.out.print("Elija una opción: ");
+                        opcionModulo = scanner.nextInt();
+
+                        switch(opcionModulo) {
+                            case 1:
+                                // División de dos números reales
+                                System.out.print("Ingrese el primer número entero para calcular el modulo: ");
+                                int entero1 = scanner.nextInt();
+                                System.out.print("Ingrese el segundo número real: ");
+                                int entero2 = scanner.nextInt();
+                                int resultadoEntero = modulo.modulo(entero1, entero2);
+                                System.out.println("Resultado: " + resultadoEntero);
+
+                                break;
+
+                            case 2:
+                                // División de dos números enteros
+                                System.out.print("Ingrese un numero real: ");
+                                double real1 = scanner.nextDouble();
+
+                                double resultadoReal = modulo.absoluto(real1);
+                                System.out.println("Resultado: " +  resultadoReal);
+                                break;
+
+                            case 3:
+                                System.out.println("¡Gracias por usar la calculadora!");
+                                break;
+
+                            default:
+                                System.out.println("Opción no válida, intente de nuevo.");
+                        }
+                    } while(opcionCociente != 5);
+                    break;
+                case 6:
                     System.out.println("Saliendo de la calculadora...");
                     break;
                 default:
