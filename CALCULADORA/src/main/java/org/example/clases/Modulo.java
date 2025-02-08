@@ -1,9 +1,6 @@
 package org.example.clases;
 
 /**
- * Clase que proporciona operaciones relacionadas con el módulo (residuo de una división) y el valor absoluto.
- */
-/**
  * La clase {@code Modulo} Clase que proporciona operaciones relacionadas
  * con el módulo (residuo de una división) y el valor absoluto.
  *  <p>Esta clase ofrece las siguientes funcionalidades:</p>
