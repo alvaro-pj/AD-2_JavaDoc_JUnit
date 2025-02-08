@@ -6,11 +6,12 @@ import org.example.clases.Resta;
 import org.example.clases.Suma;
 
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        DecimalFormat df = new DecimalFormat("#.###");
 
         int opcion;
         do {
@@ -211,7 +212,8 @@ public class Main {
                                 System.out.print("Ingrese el segundo número real: ");
                                 double real2 = scanner.nextDouble();
                                 double resultadoReal = cociente.dividorReales(real1, real2);
-                                System.out.println("Resultado: " + resultadoReal);
+                                System.out.println("Resultado: " +  df.format(resultadoReal));
+
                                 break;
 
                             case 2:
@@ -221,7 +223,7 @@ public class Main {
                                 System.out.print("Ingrese el segundo número entero: ");
                                 int entero2 = scanner.nextInt();
                                 int resultadoEntero = cociente.dividorEnteros(entero1, entero2);
-                                System.out.println("Resultado: " + resultadoEntero);
+                                System.out.println("Resultado: " +  resultadoEntero);
                                 break;
 
                             case 3:
@@ -229,7 +231,7 @@ public class Main {
                                 System.out.print("Ingrese un número real: ");
                                 double real = scanner.nextDouble();
                                 double inverso = cociente.inversoReal(real);
-                                System.out.println("Inverso: " + inverso);
+                                System.out.println("Inverso: " +  df.format((inverso)));
                                 break;
 
                             case 4:
@@ -237,7 +239,7 @@ public class Main {
                                 System.out.print("Ingrese un número: ");
                                 double numero = scanner.nextDouble();
                                 double raiz = cociente.raiz(numero);
-                                System.out.println("Raíz: " + raiz);
+                                System.out.println("Raíz: " +  df.format((raiz)));
                                 break;
 
                             case 5:
