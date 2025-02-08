@@ -1,5 +1,4 @@
 package org.example.clases;
-
 /**
  * La clase {@code Modulo} Clase que proporciona operaciones relacionadas
  * con el módulo (residuo de una división) y el valor absoluto.
@@ -10,7 +9,7 @@ package org.example.clases;
  *  * </ul>
  * @author Jesús Pastor Ricoy
  */
-public class MathOperations {
+public class Modulo {
 
     /**
      * Calcula el residuo de la división entera de dos números.
