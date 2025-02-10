@@ -71,7 +71,7 @@ public class Main {
                             default:
                                 System.out.println("Opción no válida. Intente de nuevo.");
                         }
-                    } while (opcion != 5);
+                    } while (opcionSuma != 5);
                     break;
                 case 2:
                     System.out.println("2. Resta");
@@ -317,8 +317,8 @@ public class Main {
 
                                 System.out.print("Ingrese el numero real: ");
                                 double num1 = scanner.nextDouble();
-                                double resultadoFahren = Conversion.celsiusAFahrenheit(num);
-                                System.out.println("Resultado: " + resultadoFahren;
+                                double resultadoFahren = Conversion.celsiusAFahrenheit(num1);
+                                System.out.println("Resultado: " + resultadoFahren);
 
                                 break;
 
@@ -362,7 +362,7 @@ public class Main {
                 default:
                     System.out.println("Opción no válida. Intente de nuevo.");
             }
-        } while (opcion != 5);
+        } while (opcion != 7);
 
         scanner.close();
     }
