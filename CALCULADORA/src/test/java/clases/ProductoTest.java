@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class ProductoTest {
 private Producto producto;
@@ -68,19 +69,26 @@ private Producto producto;
 
     @Test
     void testPotencia() {
-        double resultado = producto.potencia(2.0,3);
-        assertEquals(8,resultado,"El resultado de potencia es incorrecto");
+        int resultado = producto.potenciaEnteros(2,3);
+        assertEquals(8.0,resultado,"El resultado de potencia es incorrecto");
     }
 
     @Test
     void testPotenciaExpCero() {
-        double resultado = producto.potencia(2,0);
+        int resultado = producto.potenciaEnteros(2,0);
         assertEquals(1.0,resultado,"El resultado de potencia con exponente cero es incorrecto");
     }
 
     @Test
     void testPotenciaExpNegativo() {
-        double resultado = producto.potencia(2.0,-2);
-        assertEquals(0.25,resultado,"El resultado de potencia con exponente negativo es incorrecto");
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> producto.potenciaEnteros(2,-2));
+        assertEquals("El exponente no puede ser negativo", exception.getMessage());
     }
+
+    @Test
+    void testPotenciaOverflow() {
+        Exception exception = assertThrows(ArithmeticException.class, () -> producto.potenciaEnteros(2,32));
+        assertEquals("El resultado es demasiado grande", exception.getMessage());
+    }
+
 }
