@@ -53,17 +53,20 @@ package clases;
          * Operacion para la potencia de dos numeros reales.
          * @param base - Número real que introducira el usuario.
          * @param exponente - Número real que introducira el usuario.
-         * @return - Resultado de la operacion de potencia de dos numeros reales.
+         * @return  Resultado de la operacion de potencia de dos numeros reales.
+         * @throws  IllegalArgumentException en caso de que el exponente sea negaivo
+         * @throws  ArithmeticException en caso de que el resultado exceda el tamaño del long
          */
-        public static double potencia (double base, double exponente) {
-            double resultado = 1;
-            if (exponente < 0){
-                base = 1/base;
-                exponente = -exponente;
-            }
-            for (int i = 1; i <= exponente; i++) {
+        public int potenciaEnteros(int base, int exponente) {
+            if (exponente < 0) throw new IllegalArgumentException("El exponente no puede ser negativo");
+
+            long resultado = 1; // Usamos long para evitar overflow
+            for (int i = 0; i < exponente; i++) {
                 resultado *= base;
+                if (resultado > Integer.MAX_VALUE) { // Verificamos overflow
+                    throw new ArithmeticException("El resultado es demasiado grande");
+                }
             }
-            return resultado;
+            return (int) resultado;
         }
 }

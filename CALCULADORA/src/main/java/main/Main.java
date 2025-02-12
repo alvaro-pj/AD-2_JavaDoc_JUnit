@@ -173,10 +173,10 @@ public class Main {
 
                             case 4:
                                 System.out.print("Ingrese la base: ");
-                                double base = scanner.nextDouble();
+                                int base = scanner.nextInt();
                                 System.out.print("Ingrese el exponente: ");
-                                double exponente = scanner.nextDouble();
-                                System.out.println("El resultado de la potencia es: " + producto.potencia(base, exponente));
+                                int exponente = scanner.nextInt();
+                                System.out.println("El resultado de la potencia es: " + producto.potenciaEnteros(base, exponente));
                                 break;
 
                             case 5:
