@@ -1,10 +1,16 @@
 package clases;
 
 import static org.junit.jupiter.api.Assertions.*;
-import org.example.clases.Cociente;
+
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class CocienteTest {
+public class CocienteTest {
+    private Cociente cociente;
+    @BeforeEach
+    void setUp() {
+        cociente = new Cociente();
+    }
 
     @Test
     void testDividorReales() {

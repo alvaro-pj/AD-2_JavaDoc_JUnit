@@ -1,4 +1,6 @@
-package org.example.clases;
+package clases;
+
+
 /**
  * La clase {@code Cociente} proporciona métodos para realizar operaciones de cociente,
  * incluyendo la division de números reales, enteros, el inverso y la raiz cuadrada

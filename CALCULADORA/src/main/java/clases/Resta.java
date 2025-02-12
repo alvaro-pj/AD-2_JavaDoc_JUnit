@@ -1,4 +1,4 @@
-package org.example.clases;
+package clases;
 
 /**
  * Clase de operaciones de Resta
@@ -15,7 +15,7 @@ package org.example.clases;
  *
  *
  * @author Iván de la Osa (ivan.delaosa214@comunidadunir.net)
- * @see Calculadora
+ *
  */
 public class Resta {
     private double acumulado = 0;

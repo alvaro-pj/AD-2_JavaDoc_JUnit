@@ -1,6 +1,7 @@
-package org.example.main;
+package main;
 
-import org.example.clases.*;
+import clases.*;
+import clases.*;
 
 import java.util.Scanner;
 import java.text.DecimalFormat;

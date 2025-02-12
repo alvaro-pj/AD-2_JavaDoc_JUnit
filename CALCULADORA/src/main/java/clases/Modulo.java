@@ -1,4 +1,4 @@
-package org.example.clases;
+package clases;
 /**
  * La clase {@code Modulo} Clase que proporciona operaciones relacionadas
  * con el módulo (residuo de una división) y el valor absoluto.

@@ -1,7 +1,7 @@
-package org.example.clases;
+package clases;
 
 /**
- * La clase {@code conversión} proporciona métodos para realizar operaciones de conversión de unidades,
+ * La clase {@code Conversión} proporciona métodos para realizar operaciones de conversión de unidades,
  * incluyendo la conversión de Celsius a Fahrenheit, de Farenheit a Celsius, grados a radianes
  * y radianes a grados.
  *
