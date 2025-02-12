@@ -72,7 +72,7 @@ public class Main {
                             default:
                                 System.out.println("Opción no válida. Intente de nuevo.");
                         }
-                    } while (opcion != 5);
+                    } while (opcionSuma != 5);
                     break;
                 case 2:
                     System.out.println("2. Resta");
@@ -363,7 +363,7 @@ public class Main {
                 default:
                     System.out.println("Opción no válida. Intente de nuevo.");
             }
-        } while (opcion != 5);
+        } while (opcion != 7);
 
         scanner.close();
     }
