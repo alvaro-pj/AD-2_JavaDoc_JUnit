@@ -1,4 +1,4 @@
-package org.example.clases;
+package clases;
 
 
     /**
@@ -56,7 +56,7 @@ package org.example.clases;
          * @return - Resultado de la operacion de potencia de dos numeros reales.
          */
         public static double potencia (double base, double exponente) {
-            int resultado = 1;
+            double resultado = 1;
             if (exponente < 0){
                 base = 1/base;
                 exponente = -exponente;

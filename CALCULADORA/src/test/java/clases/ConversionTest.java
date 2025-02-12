@@ -2,7 +2,6 @@ package clases;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.example.clases.Conversion;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

@@ -1,6 +1,7 @@
-package org.example.main;
+package main;
 
-import org.example.clases.*;
+import clases.*;
+import clases.*;
 
 import java.util.Scanner;
 import java.text.DecimalFormat;
@@ -317,8 +318,8 @@ public class Main {
 
                                 System.out.print("Ingrese el numero real: ");
                                 double num1 = scanner.nextDouble();
-                                double resultadoFahren = Conversion.celsiusAFahrenheit(num);
-                                System.out.println("Resultado: " + resultadoFahren;
+                                double resultadoFahren = Conversion.celsiusAFahrenheit(num1);
+                                System.out.println("Resultado: " + resultadoFahren);
 
                                 break;
 
