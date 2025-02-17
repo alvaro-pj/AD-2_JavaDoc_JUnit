@@ -34,15 +34,10 @@ public class Resta {
      * Operación para resta de dos números enteros.
      * @param num1 - Primer número que introducirá el usuario
      * @param num2 - Primer número entero que introducirá el usuario
-     * @throws ArithmeticException si el num2 es menor a 0, porque no daría número entero.
      * @return - Resultado de la operación de resta de dos números enteros.
      */
     public int restaEnteros(int num1, int num2) {
-        int resultado = num1 - num2;
-        if (resultado < 0) {
-            throw new ArithmeticException("El resultado debe ser un número entero.");
-        }
-        return resultado;
+        return num1-num2;
     }
 
     /**
