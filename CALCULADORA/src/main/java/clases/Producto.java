@@ -60,12 +60,12 @@ package clases;
         public int potenciaEnteros(int base, int exponente) {
             if (exponente < 0) throw new IllegalArgumentException("El exponente no puede ser negativo");
 
-            long resultado = 1; // Usamos long para evitar overflow
+            long resultado = 1;
             for (int i = 0; i < exponente; i++) {
-                resultado *= base;
-                if (resultado > Integer.MAX_VALUE) { // Verificamos overflow
+                if (resultado > (long) Integer.MAX_VALUE / base) { // Mejor verificación de overflow
                     throw new ArithmeticException("El resultado es demasiado grande");
                 }
+                resultado *= base;
             }
             return (int) resultado;
         }

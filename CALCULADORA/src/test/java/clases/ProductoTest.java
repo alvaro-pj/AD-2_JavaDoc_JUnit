@@ -69,25 +69,25 @@ private Producto producto;
 
     @Test
     void testPotencia() {
-        int resultado = producto.potenciaEnteros(2,3);
-        assertEquals(8.0,resultado,"El resultado de potencia es incorrecto");
+        int resultado = producto.potenciaEnteros(2, 3);
+        assertEquals(8, resultado, "El resultado de potencia es incorrecto");
     }
 
     @Test
     void testPotenciaExpCero() {
-        int resultado = producto.potenciaEnteros(2,0);
-        assertEquals(1.0,resultado,"El resultado de potencia con exponente cero es incorrecto");
+        int resultado = producto.potenciaEnteros(2, 0);
+        assertEquals(1, resultado, "El resultado de potencia con exponente cero es incorrecto");
     }
 
     @Test
     void testPotenciaExpNegativo() {
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> producto.potenciaEnteros(2,-2));
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> producto.potenciaEnteros(2, -2));
         assertEquals("El exponente no puede ser negativo", exception.getMessage());
     }
 
     @Test
     void testPotenciaOverflow() {
-        Exception exception = assertThrows(ArithmeticException.class, () -> producto.potenciaEnteros(2,32));
+        Exception exception = assertThrows(ArithmeticException.class, () -> producto.potenciaEnteros(2, 32));
         assertEquals("El resultado es demasiado grande", exception.getMessage());
     }
 
