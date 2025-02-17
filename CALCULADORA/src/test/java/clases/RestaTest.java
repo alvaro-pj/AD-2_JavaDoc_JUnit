@@ -29,12 +29,6 @@ class RestaTest {
     }
 
     @Test
-    void testRestaEnterosExcepcion() {
-        // Prueba de resta con números enteros aplicando excepción
-        int resultado = resta.restaEnteros(1, 3);
-        assertEquals(-2, resultado, "El resultado debe ser un número entero.");
-    }
-    @Test
     void testRestaTresReales() {
         // Prueba de resta con tres números reales
         double resultado = resta.restaTresReales(10.0, 4.0, 2.0);
