@@ -15,7 +15,7 @@ package clases;
      *  </ul>
      *
      *
-     * @author Alvaro Postigo Jimenez
+     * @author Alvaro Postigo Jimenez (alvaro.postigo440@comunidadunir.net)
      */
     public class Producto {
 
