@@ -13,7 +13,7 @@ package clases;
  *   <li>Suma de valores mediante un acumulador</li>
  * </ul>
  *
- * @author Alexander Roman Diaz
+ * @author Alexander Roman Diaz (alexander.roman981@comunidadunir.net)
  */
 public class Suma {
 
