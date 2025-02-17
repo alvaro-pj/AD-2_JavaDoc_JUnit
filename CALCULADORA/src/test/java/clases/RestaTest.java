@@ -30,10 +30,12 @@ class RestaTest {
 
     @Test
     void testRestaEnterosExcepcion() {
-        // Prueba de resta con números enteros aplicando excepción
-        int resultado = resta.restaEnteros(1, 3);
-        assertEquals(-2, resultado, "El resultado debe ser un número entero.");
+        Exception exception = assertThrows(ArithmeticException.class, () -> {
+            resta.restaEnteros(2, 5);
+        });
+        assertEquals("El resultado debe ser un número entero.", exception.getMessage());
     }
+
     @Test
     void testRestaTresReales() {
         // Prueba de resta con tres números reales
