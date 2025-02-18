@@ -7,7 +7,7 @@ package clases;
  *  *   <li>Cálculo del módulo (residuo de una división entera).</li>
  *  *   <li>Cálculo del valor absoluto de un número.</li>
  *  * </ul>
- * @author Jesús Pastor Ricoy
+ * @author Jesús Pastor Ricoy(jesus.pastor318@comunidadunir.net)
  */
 public class Modulo {
 
