@@ -13,7 +13,7 @@ package clases;
  *   <li>Conversión de radianes a grados</li>
  * </ul>
  *
- * @author Héctor González Méndez - hector.gonzalez996@comunidadunir.net
+ * @author Héctor González Méndez - hectorgomendez@gmail.com
  */
 
 public class Conversion {
