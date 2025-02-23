@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="clases.CocienteTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-02-23T15:10:25" hostname="PC-ALVARO" time="0.028">
+  <properties/>
+  <testcase name="testInversoReal()" classname="clases.CocienteTest" time="0.014"/>
+  <testcase name="testRaiz()" classname="clases.CocienteTest" time="0.001"/>
+  <testcase name="testCocienteEnteros0()" classname="clases.CocienteTest" time="0.003"/>
+  <testcase name="testCocienteDosReales()" classname="clases.CocienteTest" time="0.0"/>
+  <testcase name="testCocienteDosReales0()" classname="clases.CocienteTest" time="0.001"/>
+  <testcase name="testRaizNegativo()" classname="clases.CocienteTest" time="0.001"/>
+  <testcase name="testInversoReal0()" classname="clases.CocienteTest" time="0.001"/>
+  <testcase name="testCocienteDosEnteros()" classname="clases.CocienteTest" time="0.002"/>
+  <system-out><![CDATA[num2 no puede ser 0
+num2 no puede ser 0
+num1 no puede ser negativo
+num1 no puede ser 0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

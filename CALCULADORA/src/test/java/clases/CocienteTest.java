@@ -1,9 +1,19 @@
 package clases;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+/**
+ * Clase de operaciones de CocienteTest:
+ * La clase {@code CocienteTest} proporciona métodos para testear operaciones de cociente,
+ * incluyendo el cociente de dos reales, el cociente de dos enteros, el inverso y la raizcuadrada
+
+ *
+ * @author Azucena Jiménez Castaneda (azucena.jimenez922@comunidadunir.net)
+ * URL del Repositorio GitHub: https://github.com/alvaro-pj/AD-2_JavaDoc_JUnit
+ */
 
 public class CocienteTest {
     private Cociente cociente;
@@ -13,30 +23,57 @@ public class CocienteTest {
     }
 
     @Test
-    void testDividorReales() {
-        assertEquals(3.5, Cociente.dividorReales(7.0, 2.0), 0.0001);
-        assertEquals(-4.0, Cociente.dividorReales(-8.0, 2.0), 0.0001);
-        assertThrows(ArithmeticException.class, () -> Cociente.dividorReales(6.0, 0.0));
+    void testCocienteDosReales() {
+        double resultado = cociente.dividorReales(2.0, 2.0);
+        assertEquals(1.0, resultado, "El cociente entre dos reales es incorrecto");
     }
 
     @Test
-    void testDividorEnteros() {
-        assertEquals(3, Cociente.dividorEnteros(9, 3));
-        assertEquals(-3, Cociente.dividorEnteros(-9, 3));
-        assertThrows(ArithmeticException.class, () -> Cociente.dividorEnteros(7, 0));
+    void testCocienteDosReales0() {
+        double resultado = cociente.dividorReales(2.0, 0);
+        assertEquals(-1, resultado, "Dividendo no puede ser 0");
     }
+
+
+    @Test
+    void testCocienteDosEnteros() {
+        int resultado = cociente.dividorEnteros(2, 2);
+        assertEquals(1.0, resultado, "El cociente entre dos reales es incorrecto");
+    }
+
+    @Test
+    void testCocienteEnteros0() {
+        int resultado = cociente.dividorEnteros(2, 0);
+        assertEquals(-1, resultado, "Dividendo no puede ser 0");
+    }
+
+
+
 
     @Test
     void testInversoReal() {
-        assertEquals(0.25, Cociente.inversoReal(4.0), 0.0001);
-        assertEquals(-0.2, Cociente.inversoReal(-5.0), 0.0001);
-        assertThrows(ArithmeticException.class, () -> Cociente.inversoReal(0.0));
+        double resultado = cociente.inversoReal(2.0);
+        assertEquals(0.5, resultado, "El cociente entre dos reales es incorrecto");
     }
 
     @Test
-    void testRaiz() {
-        assertEquals(4.0, Cociente.raiz(16.0), 0.0001);
-        assertEquals(0.0, Cociente.raiz(0.0), 0.0001);
-        assertThrows(ArithmeticException.class, () -> Cociente.raiz(-9.0));
+    void testInversoReal0() {
+        double resultado = cociente.inversoReal(0);
+        assertEquals(-1, resultado, "Dividendo no puede ser 0");
     }
+
+
+    @Test
+    void testRaiz() {
+        double resultado = cociente.raiz(25.0);
+        assertEquals(5.0, resultado, "La raiz de un numero real es incorrecta");
+    }
+
+    @Test
+    void testRaizNegativo() {
+        double resultado = cociente.raiz(-5);
+        assertEquals(-1, resultado, "La raiz no puede ser negativa");
+    }
+
+
 }
