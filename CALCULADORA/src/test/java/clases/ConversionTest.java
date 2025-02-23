@@ -5,6 +5,23 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Clase de operaciones de Conversiontest:
+ * La clase {@code ConversionTest} proporciona métodos para testear operaciones de conversion,
+ * incluyendo la conversión de Celsius a Fahrenheit, de Farenheit a Celsius, grados a radianes
+ * y radianes a grados.
+ *
+ * <p>Esta clase ofrece las siguientes funcionalidades:</p>
+ * <ul>
+ *   <li>Conversión de grados Celsius a Fahrenheit</li>
+ *   <li>Conversión de grados Fahrenheit a Celsius</li>
+ *   <li>Conversión de grados a radianes</li>
+ *   <li>Conversión de radianes a grados</li>
+ * </ul>
+ *
+ * @author Héctor González Méndez (hectorgomendez@gmail.com)
+ */
+
 class ConversionTest {
 
     private Conversion conversion;
