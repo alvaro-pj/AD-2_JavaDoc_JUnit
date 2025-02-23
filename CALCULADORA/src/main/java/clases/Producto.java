@@ -16,6 +16,7 @@ package clases;
      *
      *
      * @author Alvaro Postigo Jimenez (alvaro.postigo440@comunidadunir.net)
+     * URL del Repositorio GitHub: https://github.com/alvaro-pj/AD-2_JavaDoc_JUnit
      */
     public class Producto {
 

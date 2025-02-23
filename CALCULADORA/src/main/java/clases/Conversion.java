@@ -14,6 +14,7 @@ package clases;
  * </ul>
  *
  * @author Héctor González Méndez (hectorgomendez@gmail.com)
+ * URL del Repositorio GitHub: https://github.com/alvaro-pj/AD-2_JavaDoc_JUnit
  */
 
 public class Conversion {

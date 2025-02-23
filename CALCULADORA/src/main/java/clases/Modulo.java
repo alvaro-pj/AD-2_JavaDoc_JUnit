@@ -3,10 +3,10 @@ package clases;
  * La clase {@code Modulo} Clase que proporciona operaciones relacionadas
  * con el módulo (residuo de una división) y el valor absoluto.
  *  <p>Esta clase ofrece las siguientes funcionalidades:</p>
- *  * <ul>
- *  *   <li>Cálculo del módulo (residuo de una división entera).</li>
- *  *   <li>Cálculo del valor absoluto de un número.</li>
- *  * </ul>
+ *  <ul>
+ *    <li>Cálculo del módulo (residuo de una división entera).</li>
+ *    <li>Cálculo del valor absoluto de un número.</li>
+ *  </ul>
  * @author Jesús Pastor Ricoy(jesus.pastor318@comunidadunir.net)
  * URL del Repositorio GitHub: https://github.com/alvaro-pj/AD-2_JavaDoc_JUnit
  */

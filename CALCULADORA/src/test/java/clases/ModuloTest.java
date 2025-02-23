@@ -1,19 +1,20 @@
 package clases;
 
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+
 /**
  * Clase de operaciones de ModuloTest:
  * La clase {@code ModuloTest}  Clase que proporciona operaciones relacionadas
- *  * con el módulo (residuo de una división) y el valor absoluto.
+ * con el módulo (residuo de una división) y el valor absoluto.
  *
  * @author Jesús Pastor Ricoy (jesus.pastor318@comunidadunir.net)
  * URL del Repositorio GitHub: https://github.com/alvaro-pj/AD-2_JavaDoc_JUnit
  */
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class ModuloTest {
 

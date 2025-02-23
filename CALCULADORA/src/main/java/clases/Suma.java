@@ -14,6 +14,8 @@ package clases;
  * </ul>
  *
  * @author Alexander Roman Diaz (alexander.roman981@comunidadunir.net)
+ * URL del Repositorio GitHub: https://github.com/alvaro-pj/AD-2_JavaDoc_JUnit
+ * 
  */
 public class Suma {
 
