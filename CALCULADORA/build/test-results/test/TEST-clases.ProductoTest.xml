@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite name="clases.ProductoTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2025-02-23T11:14:13" hostname="PC-ALVARO" time="0.032">
   <properties/>
   <testcase name="testProductoDosReales()" classname="clases.ProductoTest" time="0.013"/>
@@ -17,5 +18,23 @@
   <system-out><![CDATA[Error: El exponente no puede ser negativo
 Error: El resultado excede el valor máximo de un int
 ]]></system-out>
+=======
+<testsuite name="clases.ProductoTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2025-02-22T10:23:57" hostname="DESKTOP-RCANN02" time="0.167">
+  <properties/>
+  <testcase name="testProductoDosReales()" classname="clases.ProductoTest" time="0.044"/>
+  <testcase name="testPotenciaExpNegativo()" classname="clases.ProductoTest" time="0.011"/>
+  <testcase name="testProductoDosEnteros()" classname="clases.ProductoTest" time="0.002"/>
+  <testcase name="testProductoTresRealesCero()" classname="clases.ProductoTest" time="0.001"/>
+  <testcase name="testProductoDosEnterosNegativo()" classname="clases.ProductoTest" time="0.002"/>
+  <testcase name="testProductoDosEnterosCero()" classname="clases.ProductoTest" time="0.005"/>
+  <testcase name="testPotenciaExpCero()" classname="clases.ProductoTest" time="0.005"/>
+  <testcase name="testProductoDosRealesCero()" classname="clases.ProductoTest" time="0.001"/>
+  <testcase name="testProductoTresRealesNegativo()" classname="clases.ProductoTest" time="0.005"/>
+  <testcase name="testPotenciaOverflow()" classname="clases.ProductoTest" time="0.008"/>
+  <testcase name="testProductoDosRealesNegativo()" classname="clases.ProductoTest" time="0.002"/>
+  <testcase name="testPotencia()" classname="clases.ProductoTest" time="0.004"/>
+  <testcase name="testProductoTresReales()" classname="clases.ProductoTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+>>>>>>> ivan_resta
   <system-err><![CDATA[]]></system-err>
 </testsuite>

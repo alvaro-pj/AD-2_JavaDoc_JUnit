@@ -4,7 +4,17 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class RestaTest {
+/**
+ * Clase de operaciones de Restatest:
+ * La clase {@code Restatest} proporciona métodos para testear operaciones de resta,
+ * incluyendo la resta de números reales, enteros, la resta de tres números reales
+ * y mantener un valor acumulado.
+ *  
+ * @author Iván de la Osa (ivan.delaosa214@comunidadunir.net)
+ * URL del Repositorio GitHub: https://github.com/alvaro-pj/AD-2_JavaDoc_JUnit
+ */
+
+class RestaTest {
 
     private Resta resta;
 

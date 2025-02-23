@@ -15,7 +15,7 @@ package clases;
  *
  *
  * @author Iván de la Osa (ivan.delaosa214@comunidadunir.net)
- *
+ * URL del Repositorio GitHub: https://github.com/alvaro-pj/AD-2_JavaDoc_JUnit
  */
 public class Resta {
     private double acumulado = 0;
