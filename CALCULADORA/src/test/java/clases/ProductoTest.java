@@ -4,11 +4,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /**
  * Clase de operaciones de ProductoTest:
- * La clase {@code ProductoTest} proporciona métodos para testear operaciones de prducto,
+ * La clase {@code ProductoTest} proporciona métodos para testear operaciones de producto,
  * incluyendo el producto de dos reales, el prodcuto de dos enteros, el producto de tres números reales
  * y la potencia de dos enteros.
  *
