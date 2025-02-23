@@ -6,6 +6,16 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+/**
+ * Clase de operaciones de ProductoTest:
+ * La clase {@code ProductoTest} proporciona métodos para testear operaciones de prducto,
+ * incluyendo el producto de dos reales, el prodcuto de dos enteros, el producto de tres números reales
+ * y la potencia de dos enteros.
+ *
+ * @author Álvaro Postigo Jiménez (alvaro.postigo440@comunidadunir.net)
+ * URL del Repositorio GitHub: https://github.com/alvaro-pj/AD-2_JavaDoc_JUnit
+ */
+
 public class ProductoTest {
 private Producto producto;
     @BeforeEach
@@ -81,14 +91,14 @@ private Producto producto;
 
     @Test
     void testPotenciaExpNegativo() {
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> producto.potenciaEnteros(2, -2));
-        assertEquals("El exponente no puede ser negativo", exception.getMessage());
+        int resultado = producto.potenciaEnteros(3, -2);
+        assertEquals(-1, resultado, "El resultado de potencia con exponente negativo debería ser -1");
     }
 
     @Test
     void testPotenciaOverflow() {
-        Exception exception = assertThrows(ArithmeticException.class, () -> producto.potenciaEnteros(2, 32));
-        assertEquals("El resultado es demasiado grande", exception.getMessage());
+        int resultado = producto.potenciaEnteros(2, 31);
+        assertEquals(-1, resultado, "El resultado de potencia que excede Integer.MAX_VALUE debería ser -1");
     }
 
 }

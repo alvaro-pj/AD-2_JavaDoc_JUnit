@@ -150,7 +150,7 @@ public class Main {
                                 double num1 = scanner.nextDouble();
                                 System.out.print("Ingrese el segundo número real: ");
                                 double num2 = scanner.nextDouble();
-                                System.out.println("El producto es: " + producto.productoDosReales(num1, num2));
+                                System.out.println("El producto es: " + Producto.productoDosReales(num1, num2));
                                 break;
 
                             case 2:

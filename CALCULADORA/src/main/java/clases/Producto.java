@@ -54,19 +54,24 @@ package clases;
          * @param base - Número real que introducira el usuario.
          * @param exponente - Número real que introducira el usuario.
          * @return  Resultado de la operacion de potencia de dos numeros reales.
-         * @throws  IllegalArgumentException en caso de que el exponente sea negaivo
-         * @throws  ArithmeticException en caso de que el resultado exceda el tamaño del long
          */
-        public int potenciaEnteros(int base, int exponente) {
-            if (exponente < 0) throw new IllegalArgumentException("El exponente no puede ser negativo");
+        public static int potenciaEnteros(int base, int exponente) {
+            if (exponente < 0) {
+                System.out.println("Error: El exponente no puede ser negativo");
+                return -1;
+            }
 
-            long resultado = 1;
+            int resultado = 1;
+
             for (int i = 0; i < exponente; i++) {
-                if (resultado > (long) Integer.MAX_VALUE / base) { // Mejor verificación de overflow
-                    throw new ArithmeticException("El resultado es demasiado grande");
+                if (resultado > Integer.MAX_VALUE / base) {
+                    System.out.println("Error: El resultado excede el valor máximo de un int");
+                    return -1;
                 }
                 resultado *= base;
             }
-            return (int) resultado;
+            return resultado;
+
+
         }
 }
