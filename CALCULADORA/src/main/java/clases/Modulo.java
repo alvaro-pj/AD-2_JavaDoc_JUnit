@@ -8,6 +8,7 @@ package clases;
  *  *   <li>Cálculo del valor absoluto de un número.</li>
  *  * </ul>
  * @author Jesús Pastor Ricoy(jesus.pastor318@comunidadunir.net)
+ * URL del Repositorio GitHub: https://github.com/alvaro-pj/AD-2_JavaDoc_JUnit
  */
 public class Modulo {
 
