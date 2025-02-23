@@ -4,7 +4,7 @@ package clases;
     /**
      * Clase de operaciones de Producto
      * La clase {@code Producto} proporciona métodos para realizar el productos,
-     * incluyendo el producto de números reales, enteros, el prodcuto de tres números reales
+     * incluyendo el producto de números reales, enteros, el producto de tres números reales
      * y la potencia.
      *  <p>Esta clase ofrece las siguientes funcionalidades:</p>
      *  <ul>
