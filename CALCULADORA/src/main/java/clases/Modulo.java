@@ -8,6 +8,7 @@ package clases;
  *  *   <li>Cálculo del valor absoluto de un número.</li>
  *  * </ul>
  * @author Jesús Pastor Ricoy(jesus.pastor318@comunidadunir.net)
+ * URL del Repositorio GitHub: https://github.com/alvaro-pj/AD-2_JavaDoc_JUnit
  */
 public class Modulo {
 
@@ -17,11 +18,11 @@ public class Modulo {
      * @param a el dividendo
      * @param b el divisor (debe ser distinto de cero)
      * @return el residuo de la división de a entre b
-     * @throws ArithmeticException si b es cero
      */
     public static int modulo(int a, int b) {
         if (b == 0) {
-            throw new ArithmeticException("El divisor no puede ser cero");
+            System.out.println("El divisor no pueder ser igual a 0");
+            return -1;
         }
         return a % b;
     }
