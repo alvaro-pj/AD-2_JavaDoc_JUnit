@@ -1,4 +1,4 @@
-package org.example.clases;
+package clases;
 
 /**
  * La clase {@code Suma} proporciona métodos para realizar operaciones de suma,
@@ -10,10 +10,10 @@ package org.example.clases;
  *   <li>Suma de dos números reales</li>
  *   <li>Suma de dos números enteros</li>
  *   <li>Suma de tres números reales</li>
- *   <li>Suma de valores mediante un método acumulador</li>
+ *   <li>Suma de valores mediante un acumulador</li>
  * </ul>
  *
- * @author Alexander Roman Diaz
+ * @author Alexander Roman Diaz (alexander.roman981@comunidadunir.net)
  */
 public class Suma {
 

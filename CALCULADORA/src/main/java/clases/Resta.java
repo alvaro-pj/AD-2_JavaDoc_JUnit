@@ -1,4 +1,4 @@
-package org.example.clases;
+package clases;
 
 /**
  * Clase de operaciones de Resta
@@ -15,7 +15,7 @@ package org.example.clases;
  *
  *
  * @author Iván de la Osa (ivan.delaosa214@comunidadunir.net)
- * @see Calculadora
+ *
  */
 public class Resta {
     private double acumulado = 0;
@@ -37,7 +37,7 @@ public class Resta {
      * @return - Resultado de la operación de resta de dos números enteros.
      */
     public int restaEnteros(int num1, int num2) {
-        return num1 - num2;
+        return num1-num2;
     }
 
     /**

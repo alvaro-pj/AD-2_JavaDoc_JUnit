@@ -1,6 +1,5 @@
 package clases;
 
-import org.example.clases.Suma;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
